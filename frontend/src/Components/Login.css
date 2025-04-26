@@ -1,0 +1,214 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.login-page {
+    display: flex;
+    height: 100vh;
+    background: url('../Assets/top-view-finance-business-elements_23-2148793757-Picsart-AiImageEnhancer.jpg') no-repeat center center/cover;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+
+.login-left {
+    flex: 1;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.5); /* dark overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-left h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.login-left p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    color: red;
+}
+
+.social-icons i {
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-icons i:hover {
+    transform: scale(1.2);
+}
+
+
+.login-right {
+    flex: 1;
+    padding: 80px 50px;
+    background: rgba(255, 255, 255, 0.95);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-right h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.login-right input[type="email"],
+.login-right input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-me label {
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.login-right button {
+    background-color: #FF5722;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.login-right button:hover {
+    background-color: #e64a19;
+}
+
+.forgot-password {
+    margin-top: 10px;
+    color: #FF5722;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.signup-text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signup-link {
+    color: #FF5722;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.terms {
+    margin-top: 30px;
+    font-size: 12px;
+    color: gray;
+    text-align: center;
+}
+
+.terms-link {
+    color: #FF5722;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .login-page {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-position: center center;
+        background-size: cover;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .login-left, .login-right {
+        flex: none;
+        width: 90%;
+        padding: 20px;
+        margin: 10px 0;
+    }
+
+    .login-left {
+        background: rgba(0, 0, 0, 0.5);
+        text-align: center;
+    }
+
+    .login-left h1 {
+        font-size: 32px;
+        color: white;
+    }
+
+    .login-left p {
+        font-size: 14px;
+        color: #ddd;
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        justify-content: center;
+        gap: 20px;
+        margin-top: 10px;
+    }
+
+    .login-right {
+        background: rgba(255, 255, 255, 0.9);
+        color: black;
+        text-align: center;
+    }
+
+    .login-right h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .login-right input[type="email"],
+    .login-right input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .remember-me {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .login-right button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .signup-text {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+}

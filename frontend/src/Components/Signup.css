@@ -1,0 +1,171 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.signup-page {
+    display: flex;
+    height: 100vh;
+    background: url('../Assets/top-view-finance-business-elements_23-2148793757-Picsart-AiImageEnhancer.jpg') no-repeat center center/cover;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+.success {
+    color: green;
+    margin-top: 10px;
+}
+
+
+.signup-left {
+    flex: 1;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signup-left h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.signup-left p {
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons i {
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-icons i:hover {
+    transform: scale(1.2);
+}
+
+.signup-right {
+    flex: 1;
+    padding: 80px 50px;
+    background: rgba(255, 255, 255, 0.95);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signup-right h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.signup-right input[type="text"],
+.signup-right input[type="email"],
+.signup-right input[type="password"],
+.signup-right input[type="file"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.agree-terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.agree-terms label {
+    margin-left: 8px;
+}
+
+.signup-right button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.signup-right button:hover {
+    background-color: #43a047;
+}
+
+.login-text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-link {
+    color: #4CAF50;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .signup-page {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+    }
+
+    .signup-left, .signup-right {
+        flex: none;
+        width: 90%;
+        padding: 30px 20px;
+        margin: 10px 0;
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .signup-right {
+        background: rgba(255, 255, 255, 0.95);
+    }
+
+    .signup-left h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .signup-left p, .social-icons {
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .signup-right input[type="text"],
+    .signup-right input[type="email"],
+    .signup-right input[type="password"],
+    .signup-right input[type="file"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
