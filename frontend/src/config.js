@@ -1,4 +1,4 @@
 
-const BASE_URL = "https://moneymate-1.onrender.com";
+const BASE_URL = "https://money-mate-cqtg.onrender.com";
 
 export default BASE_URL;
