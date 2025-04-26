@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import BASE_URL from './config';
 import "./Dashboard.css";
 import AddTransaction from "./AddTransaction";
 
@@ -17,8 +18,6 @@ function Dashboard({ token }) {
   const [showModal, setShowModal] = useState(false);
   const [transactionType, setTransactionType] = useState('income');
   const navigate = useNavigate();
-
-  const BASE_URL = "https://moneymate-1.onrender.com";
 
   const calculateTotals = (transactions) => {
     const inc = transactions.filter(t => t.type === "income").reduce((acc, cur) => acc + cur.amount, 0);
