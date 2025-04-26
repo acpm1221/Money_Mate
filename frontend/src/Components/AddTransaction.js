@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
+import BASE_URL from './config'; 
 import './AddTransaction.css';
 
 function AddTransaction({ token, type, onClose, onTransactionAdded }) {
@@ -16,7 +17,7 @@ function AddTransaction({ token, type, onClose, onTransactionAdded }) {
     }
 
     try {
-      await axios.post('${BASE_URL}/api/transactions', {
+      await axios.post(`${BASE_URL}/api/transactions`, {
         title,
         type,
         category,
@@ -26,8 +27,8 @@ function AddTransaction({ token, type, onClose, onTransactionAdded }) {
       }, {
         headers: { Authorization: `Bearer ${token}` },
       });
-      onTransactionAdded(); // refresh dashboard
-      onClose(); // close modal
+      onTransactionAdded(); 
+      onClose(); 
     } catch (err) {
       alert('Error adding transaction');
     }
