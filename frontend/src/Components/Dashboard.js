@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import BASE_URL from './config';
+import BASE_URL from '../config';
 import "./Dashboard.css";
 import AddTransaction from "./AddTransaction";
 
